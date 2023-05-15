@@ -1,0 +1,30 @@
+{
+    "_comment1": "Please add device parameters below as required",
+    "_comment2": "Port numbers here does not relate to port number on the hardware module",
+    "_comment3": "Port1Device1 refers to first port and first device in the tcc config file",
+    
+    "tcc_configurationfile": ["ipv4rfc.tcc", "ipmulti.tcc"],
+    "labserver": "10.140.98.206",
+    "ipv4": "True",
+    "ipv6":"False",
+    		
+    "_comment4": "This are IPv4 Device Configs",	 
+    "port1device1ipv4config":{ "Address": "1.1.1.1","Gateway": "1.1.1.2", "Prefix": 24},
+    "port1device2ipv4config":{ "Address": "1.1.1.1","Gateway": "1.1.1.2", "Prefix": 24},
+    "port2device1ipv4config":{ "Address": "1.1.1.2","Gateway": "1.1.1.1", "Prefix": 24},
+    "port3device1ipv4config":{ "Address": "3.3.3.3","Gateway": "3.3.3.3", "Prefix": 24},
+    "port4device1ipv4config":{ "Address": "41.4.4.4","Gateway": "41.4.4.4", "Prefix": 24},
+    "port4device2ipv4config":{ "Address": "42.4.4.4","Gateway": "42.4.4.4", "Prefix": 24},
+    
+    "_comment5": "This are IPv6 Device Configs",
+    "port1device1ipv6config":{ "Address": "2001::1","Gateway": "2001::9", "Prefix": 64},
+    "port2device1ipv6config":{ "Address": "2001::2","Gateway": "2001::10", "Prefix": 64},
+    "port2device2ipv6config":{ "Address": "2001::2","Gateway": "2001::10", "Prefix": 64},
+    "port3device1ipv6config":{ "Address": "2001::3","Gateway": "2001::11", "Prefix": 64},
+    "port4device1ipv6config":{ "Address": "2001::4","Gateway": "2001::12", "Prefix": 64},
+    "port4device2ipv6config":{ "Address": "2001::5","Gateway": "2001::13", "Prefix": 64},
+    
+    "ReportName": ["rfcauto","ipv4rfc"],
+    "TemplateName": ["Asymmetric RFC2544 Throughput Test Report","Asymmetric RFC2544 Throughput Test Report"],
+    "TestName":["rfcauto","ipv4rfc"]
+}
